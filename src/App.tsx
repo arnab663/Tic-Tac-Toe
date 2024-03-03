@@ -34,6 +34,8 @@ function App() {
     const win = checkWinner(blockValueCopy)
     if(win){
       alert(`${currTurn} has won the game !!`)
+      setBlockValue([])
+      return
     }
 
     setCurrTurn(currTurn==="X" ? "O" : "X")
